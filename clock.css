@@ -1,0 +1,19 @@
+body{
+  background-color: black;
+  text-align: center;
+  font-family: monospace;
+}
+#txt{
+  color: white;
+  font-size: 300%;
+
+}
+#weekday{
+  color: white;
+  font-size: 300%;
+}
+.progress{
+  width: 100%;
+
+  border: 2px solid white;
+}

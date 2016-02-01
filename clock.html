@@ -4,14 +4,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Clock</title>
   <script src="clock.js"></script>
+  <link rel="stylesheet" type="text/css" href="clock.css">
 </head>
 <body onload="startTime()">
   <div id="txt"></div>
+  <div id="weekday"></div>
   <button type="button"
   onclick = "randcolor()">
-  Click Me!</button>
+  Muuda värvi!</button><br>
+  
+<div id="progress">
+  <progress id="hourbar" value="" max="24"></progress><br>
+  <progress id="minutebar" value="" max="60"></progress><br>
+  <progress id="secondbar" value="" max="60"></progress><br>
+</div>
 
 </body>
 </html>

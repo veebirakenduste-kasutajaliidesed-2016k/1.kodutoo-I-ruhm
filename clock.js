@@ -7,8 +7,17 @@ function startTime(){
   var d = today.getDay();
   m = checkTime(m);
   s = checkTime(s);
+
   document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s + "-" + weekdays[d];
+  h + ":" + m + ":" + s;
+
+  document.getElementById('weekday').innerHTML=
+  weekdays[d];
+
+  document.getElementById('hourbar').value = h;
+  document.getElementById('minutebar').value = m;
+  document.getElementById('secondbar').value = s;   
+
 
   var t = setTimeout(startTime, 1000);
 }
