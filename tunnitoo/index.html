@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+    <label>Eesnimi: </label><input type="text" id="first_name" onkeyup="welcome()"><br>
+    <label>Perenimi: </label><input type="text" id="last_name" onkeyup="welcome()"><br>
+    <input type="submit" value="Tervita" onclick="welcome()">
+
+    <div id="output"></div>
+
+    <br>
+    <br>
+
+    
+  <script>
+    var first_name;
+    var last_name;
+
+    function welcome(){
+      //console.log("Töötab!");
+
+      first_name = document.getElementById('first_name').value;
+      last_name = document.getElementById('last_name').value;
+
+      console.log(first_name + " " + last_name);
+
+      document.getElementById('output').innerHTML = "<b>Tere </b>" + first_name + " " + last_name;
+    }
+  </script>
+</body>
+</html>
