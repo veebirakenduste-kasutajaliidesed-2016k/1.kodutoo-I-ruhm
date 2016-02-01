@@ -1,7 +1,7 @@
 #clock
 {
-	width: 840px ;
-	height: 260px ;
+	width: 860px ;
+	height: 360px ;
 	position: absolute;
     top:0;
     bottom: 0;
@@ -9,12 +9,19 @@
 	right: 0;
     margin: auto;
 	font-size: 200px;
-	border: solid 10px;
+	/*border: solid 10px;*/
 	font-family: cool;
+	text-align: center;
+	/*color:red;*/
 }
 
 @font-face
 {
 	font-family:cool;
 	src: url("KGBlankSpaceSketch.ttf") format("truetype");
+}
+
+#kp
+{
+	font-size:40px;
 }
