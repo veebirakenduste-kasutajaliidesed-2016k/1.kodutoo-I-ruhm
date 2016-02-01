@@ -1,0 +1,30 @@
+
+/*muudad positsooni fixed et text ei lendaks kaugemale kui vaja*/
+body { position: fixed; }
+
+#datetime,#clock,#author { position: relative; }
+/*lisan backgroundi ja psotsoonid ja suurused*/
+body{
+	background-image: url("images/clock.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+    background-color: black;
+}
+
+/*lisan tekstimuutmised kui peale klickid*/
+.first{
+
+    color:purple;
+    font-size:44px;
+    text-shadow: 39px 21px 8px rgba(10, 10, 10, 0.75);
+}
+.second{
+
+    color:red;
+    font-size:44px;
+    text-shadow: 39px 21px 8px rgba(199, 19, 199, 0.75);
+
+}
+
+
