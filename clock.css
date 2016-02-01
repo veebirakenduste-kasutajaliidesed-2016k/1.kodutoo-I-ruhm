@@ -1,0 +1,28 @@
+body { position: fixed; }
+
+#datetime,#clock { position: relative; }
+
+body{
+	background-image: url("images/clock.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+    background-color: black;
+}
+
+
+.first{
+
+    color:purple;
+    font-size:44px;
+    text-shadow: 39px 21px 8px rgba(10, 10, 10, 0.75);
+}
+.second{
+
+    color:red;
+    font-size:44px;
+    text-shadow: 39px 21px 8px rgba(199, 19, 199, 0.75);
+
+}
+
+
