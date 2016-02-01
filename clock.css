@@ -1,7 +1,9 @@
+
+/*muudad positsooni fixed et text ei lendaks kaugemale kui vaja*/
 body { position: fixed; }
 
-#datetime,#clock { position: relative; }
-
+#datetime,#clock,#author { position: relative; }
+/*lisan backgroundi ja psotsoonid ja suurused*/
 body{
 	background-image: url("images/clock.jpg");
     background-repeat: no-repeat;
@@ -10,7 +12,7 @@ body{
     background-color: black;
 }
 
-
+/*lisan tekstimuutmised kui peale klickid*/
 .first{
 
     color:purple;

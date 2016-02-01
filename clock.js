@@ -1,6 +1,6 @@
 
 
-
+// Tunnistehtud
 window.onload = function(){
 
 	
@@ -17,7 +17,7 @@ window.onload = function(){
 
 function writeDate(){
 
-
+// lisasin kuupäava ja nendele nimetused 
 	var today = new Date();
 		monthname = [ "Jaanuar", "Veebuar", "Märts", "Aprill", "Mai", "Juuni", "Juuli", "August", "September", "Oktoober", "November", "Detsember" ]; 
 		dayname= ["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"]
@@ -34,7 +34,7 @@ function writeDate(){
 
 
 }
-
+// tunnis tehtud
 function setZeroBefore(number) {
 	if(number < 10){
 		number= '0' + number;
@@ -43,9 +43,9 @@ function setZeroBefore(number) {
 }
 
 
-
+// lisan functsiooni et kellaaeg jookseb hiire eest ära
 jQuery(function($) {
-    $('#datetime,#clock').mouseover(function() {
+    $('#datetime,#clock,#author').mouseover(function() {
         var dWidth = $(document).width() - 100,
             dHeight = $(document).height() - 100, 
             nextX = Math.floor(Math.random() * dWidth),
@@ -54,17 +54,20 @@ jQuery(function($) {
     });
 });
 
+// functsoonid et muudab html-s classi et text muutuks
+
 function colorFunction() {
     document.getElementById("datetime").setAttribute("class", "second");
 
 }
+
 
 function color2Function() {
 
     document.getElementById("clock").setAttribute('class','second');
 }
 
-
+// taustapildi muutus kui vajutatakse peale
 
 function backgroundFunction() {
     document.body.style.backgroundImage = "url('images/Teine.gif')";
