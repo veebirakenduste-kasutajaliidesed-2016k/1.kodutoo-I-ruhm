@@ -16,7 +16,7 @@ function startTime(){
 
   document.getElementById('hourbar').value = h;
   document.getElementById('minutebar').value = m;
-  document.getElementById('secondbar').value = s;   
+  document.getElementById('secondbar').value = s;
 
 
   var t = setTimeout(startTime, 1000);
@@ -27,4 +27,5 @@ function checkTime(i) {
 }
 function randcolor(){
   document.getElementById('txt').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
+    document.getElementById('weekday').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
 }
