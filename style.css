@@ -1,0 +1,20 @@
+#clock
+{
+	width: 840px ;
+	height: 260px ;
+	position: absolute;
+    top:0;
+    bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+	font-size: 200px;
+	border: solid 10px;
+	font-family: cool;
+}
+
+@font-face
+{
+	font-family:cool;
+	src: url("KGBlankSpaceSketch.ttf") format("truetype");
+}
