@@ -6,29 +6,30 @@ window.onload = function(){
 
   window.setInterval(function(){
 
-    writeSecond();
+    writeTime();
 
   }, 1000);
 
 };
 
+function writeTime(){
 
+  clock_hour.innerHTML = "TUND <br>";
+  clock_minute.innerHTML = "MINUT <br>";
+  clock_second.innerHTML = "SEKUND <br>";
 
-function writeSecond(){
-
-  clock_second.innerHTML = "SEKUND";
-  clock_second.innerHTML += "<br>";
 
   for(i = 1; i < 61; i++){
 
     if(i%10 === 0){
 
-      clock_second.innerHTML += makeNumberBold(setZeroBefore(i));
-      clock_second.innerHTML += "<br>";
+      clock_minute.innerHTML += makeNumberBold(setZeroBefore(i), "select_minute") + "<br>";
+      clock_second.innerHTML += makeNumberBold(setZeroBefore(i), "select_second") + "<br>";
 
     }else{
 
-    clock_second.innerHTML += makeNumberBold(setZeroBefore(i));
+    clock_minute.innerHTML += makeNumberBold(setZeroBefore(i), "select_minute");
+    clock_second.innerHTML += makeNumberBold(setZeroBefore(i), "select_second");
 
     }
   }
@@ -46,15 +47,37 @@ function setZeroBefore(number){
 
 }
 
-function makeNumberBold(number){
+function makeNumberBold(number, format){
 
   var today = new Date();
+
+  var hour = today.getHours();
+  var minute = today.getMinutes();
   var second = today.getSeconds();
 
-  if(number === setZeroBefore(second)){
+  if(format === "select_hour"){
 
-    number = "<b>" + number + "<b>";
+    if(number === setZeroBefore(hour)){
 
+      number = "<b>" + number + "<b>";
+
+    }
+
+  }else if(format === "select_minute"){
+
+    if(number === setZeroBefore(minute)){
+
+      number = "<b>" + number + "<b>";
+
+    }
+
+  }else{
+
+    if(number === setZeroBefore(second)){
+
+      number = "<b>" + number + "<b>";
+
+    }
   }
 
   return number;
