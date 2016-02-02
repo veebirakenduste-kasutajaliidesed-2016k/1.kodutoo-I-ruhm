@@ -44,7 +44,7 @@ function changeBackground(){
 
       //document.getElementById('change').style.backgroundImage = "none";
   } else if (document.getElementById('selectchange').value == "defaultBackground") {
-    document.body.style.backgroundImage = "none')";
+    document.body.style.backgroundImage = "none";
     document.body.style.backgroundColor = "#D3DBDE";
     //document.getElementById('change').style.backgroundColor = "#D3DBDE";
 
@@ -60,4 +60,19 @@ function changeBackground(){
     document.body.style.backgroundImage = "url('blackbackground.png')";
     //document.getElementById('change').style.backgroundImage = "url('blackbackground.png')";
   }
+}
+
+function Mirror(){
+  document.getElementById('display').style.transform.value = 'scale(-1, 1)';
+}
+function UnMirror(){
+document.getElementById('display').style.transform.value = 'scale(1, 1)';
+
+}
+
+function rotateRight(){
+  document.getElementById('display').style.transform = 'rotate(90)';
+}
+function rotateLeft(){
+  document.getElementById('display').style.transform = 'rotate(-90)';
 }
