@@ -18,12 +18,12 @@ function writeDate(){
   var hours = setZeroBefore(today.getHours());
   var minutes = setZeroBefore(today.getMinutes());
   var seconds = setZeroBefore(today.getSeconds());
-  var day = today.getDate();
-  var month = longmonth[today.getMonth()];
-  var year = today.getFullYear();
+  var day = setZeroBefore(today.getDate());
+  var month = setZeroBefore(longmonth[today.getMonth()]);
+  var year = setZeroBefore(today.getFullYear());
 
   clock.innerHTML = hours + ':'+ minutes + ':' + seconds;
-  date.innerHTML = day + '.' + ' ' month + ',' + ' ' + year;
+  date.innerHTML = day + '.' + ' '+ month + ',' + ' ' + year;
 }
 
 
