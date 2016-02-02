@@ -18,6 +18,13 @@ function startTime(){
   document.getElementById('minutebar').value = m;
   document.getElementById('secondbar').value = s;
 
+  var hdeg = 360/24*h;
+  var mdeg = 6*m+90;
+  var sdeg = 6*s+90;
+  document.getElementById('hourhand').style.transform = 'rotate('+hdeg+'deg)';
+  document.getElementById('minutehand').style.transform = 'rotate('+mdeg+'deg)';
+  document.getElementById('secondhand').style.transform = 'rotate('+sdeg+'deg)';
+
 
   var t = setTimeout(startTime, 1000);
 }

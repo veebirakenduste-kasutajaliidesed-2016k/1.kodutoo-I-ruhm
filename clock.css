@@ -40,3 +40,47 @@ progress::-webkit-progress-value {
 #secondbar::-webkit-progress-value{
   background: #0000FF;
 }
+
+
+#hourhand{
+	width: 100px;
+	height: 5px;
+	background: #00FF00;
+  transform-origin: right center;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  position: relative;
+  top: 100px;
+
+}
+#minutehand{
+	width: 100px;
+	height: 5px;
+	background: #FF0000;
+  transform-origin: right center;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  position: relative;
+  top: 100px;
+
+}
+#secondhand{
+	width: 100px;
+	height: 5px;
+	background: #0000FF;
+  transform-origin: right center;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  position: relative;
+  top: 100px;
+
+}
+#rectangle{
+  height: 200px;
+  width: 200px;
+  border-style: dashed;
+  border-radius: 50%;
+  border-width: 5px;
+  border-color: white;
+
+}
