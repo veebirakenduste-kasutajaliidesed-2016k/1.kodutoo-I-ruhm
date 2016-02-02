@@ -70,6 +70,11 @@ document.getElementById('display').style.transform.value = 'scale(1, 1)';
 
 }
 
+function randomColors(){
+  document.getElementById('clock').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
+    document.getElementById('date').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
+    }
+
 function rotateRight(){
   document.getElementById('display').style.transform = 'rotate(90)';
 }
