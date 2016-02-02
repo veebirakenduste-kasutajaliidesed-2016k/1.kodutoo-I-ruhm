@@ -5,12 +5,12 @@ body{
 }
 #txt{
   color: white;
-  font-size: 300%;
+
 
 }
 #weekday{
   color: white;
-  font-size: 300%;
+
 }
 #progressbars{
   width: 100%;
@@ -83,4 +83,20 @@ progress::-webkit-progress-value {
   border-width: 5px;
   border-color: white;
 
+}
+#name{
+  color: white;
+  padding-top:20px;
+  font-size: 200%;
+}
+#slider {
+    width:40%;
+}
+#colorbtn{
+  width: 40%;
+}
+#text{
+  margin: 20px 0;
+  font-size: 400%;
+  min-height: 300px;
 }

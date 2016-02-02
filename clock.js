@@ -20,12 +20,13 @@ function startTime() {
 
 
 
-  var hdeg = 360/24*h;
+  var hdeg = 360/12*h+90;
   var mdeg = 6*m+90;
   var sdeg = 6*s+90;
   document.getElementById('hourhand').style.transform = 'rotate('+hdeg+'deg)';
   document.getElementById('minutehand').style.transform = 'rotate('+mdeg+'deg)';
   document.getElementById('secondhand').style.transform = 'rotate('+sdeg+'deg)';
+
 
 
   var t = setTimeout(startTime, 1000);
@@ -37,5 +38,11 @@ function checkTime(i) {
 function randcolor(){
   document.getElementById('txt').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
     document.getElementById('weekday').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
-    
+
+}
+function sizer(){
+  var sizes = document.getElementById('slider');
+  var size = sizes.value;
+  document.getElementById("text").style.fontSize = size + "%";
+  console.log(size);
 }
