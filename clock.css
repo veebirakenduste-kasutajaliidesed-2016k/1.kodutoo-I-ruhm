@@ -1,6 +1,6 @@
 
 #clock{
-  color:pink;
+  color:blue;
   font-size: 6em;
   font-weight: bolder;
 
@@ -13,5 +13,43 @@
 }
 body{
   align-items: center;
+  background-color: #D3DBDE;
 
+}
+
+#display{
+  flex-direction: column;
+	flex-wrap: wrap;
+	padding-bottom:100px;
+
+	display: flex;
+  align-items: center;
+
+}
+
+section
+{
+	flex-grow: 1;
+	flex-basis: 200px;
+	padding: 15px;
+	margin: 15px;
+	min-width: 150px;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0px 0px 5px 5px black;
+
+
+
+}
+
+@media only screen and (max-width: 900px)
+{
+
+	   #date
+	{
+		font-size: 3em;
+	}
+  #clock{
+    font-size: 3em;
+  }
 }
