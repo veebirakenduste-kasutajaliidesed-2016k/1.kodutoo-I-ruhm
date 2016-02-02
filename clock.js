@@ -7,19 +7,29 @@ window.onload = function clockTime(){
 
   M = checkTime(M);
   S = checkTime(S);
-  document.getElementById('kell').innerHTML = 'Joosep Jõelehe kell';
+
   document.getElementById('kell').innerHTML = H + ' : ' + M + ' : ' + S;
 
-
-  t = setTimeout(clockTime, 500);
+  t = setTimeout(clockTime, 1000);
 
 };
 
-  function checkTime(i) {
+function checkTime(i) {
     if (i < 10) {i = "0" + i;}
     return i;
 }
 
 function randcolor(){
-  document.getElementById('kell').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
+  document.getElementById('kell').style.color = "#"+((1<<12)*Math.random()|0).toString(16);
 }
+
+function textSize(){
+
+  tekstiSuurus = document.getElementById('kell').offsetWidth/8;
+
+  document.getElementById("kell").style.fontSize = tekstiSuurus + "pt";
+
+}
+
+window.addEventListener("resize", textSize);
+window.addEventListener("load", textSize);
