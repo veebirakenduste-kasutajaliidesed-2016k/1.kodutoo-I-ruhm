@@ -21,9 +21,15 @@ function writeDate(){
   var day = setZeroBefore(today.getDate());
   var month = setZeroBefore(longmonth[today.getMonth()]);
   var year = setZeroBefore(today.getFullYear());
+  //time remaining until new day
+  //var hoursleft = setZeroBefore(23-now.getHours());
+  //var minutesleft = setZeroBefore(59-now.getMinutes());
+//  var secondsleft = setZeroBefore(59-now.getSeconds());
+
 
   clock.innerHTML = hours + ':'+ minutes + ':' + seconds;
   date.innerHTML = day + '.' + ' '+ month + ',' + ' ' + year;
+  //HMSremaining.innerHTML = hoursleft + ':' + minutesleft + ':' + secondsleft;
 }
 
 
@@ -35,6 +41,9 @@ number = '0' + number;
   }
 return number;
 }
+
+
+
 
 function changeBackground(){
   if (document.getElementById('selectchange').value == "blackBackground") {
