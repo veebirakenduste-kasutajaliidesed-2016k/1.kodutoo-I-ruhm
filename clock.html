@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clock</title>
+  <script src="clock.js"></script>
+  <link rel="stylesheet" type="text/css" href="clock.css">
+</head>
+<body onload="startTime()">
+<div id="text">
+  <div id="txt"></div>
+  <div id="weekday"></div>
+</div>
+  <button type="button"
+  onclick = "randcolor()" id="colorbtn">
+  Muuda värvi!</button>
+
+<input type="range" min="200" max="1000" onmouseup="sizer()" id="slider">
+
+
+<div id="progressbars">
+  <progress id="hourbar" value="" max="24"></progress><div class="barnum" id="hourprint"></div>
+  <progress id="minutebar" value="" max="60"></progress><div class="barnum" id="minuteprint"></div>
+  <progress id="secondbar" value="" max="60"></progress><div class="barnum" id="secondprint"></div>
+</div>
+
+<div id="rectangle">
+  <div id="hourhand"></div>
+  <div id="minutehand"></div>
+  <div id="secondhand"></div>
+</div>
+<div id="name">Jaan-Martin Kuusmann</div>
+</body>
+</html>
