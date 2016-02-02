@@ -18,10 +18,31 @@ function writeTime(){
   clock_minute.innerHTML = "MINUT <br>";
   clock_second.innerHTML = "SEKUND <br>";
 
+  for(i = 1; i < 25; i++){
+
+    if(i === 24){
+
+      clock_hour.innerHTML += makeNumberBold(setZeroBefore(0), "select_hour");
+
+    }else if(i%4 === 0){
+
+      clock_hour.innerHTML += makeNumberBold(setZeroBefore(i), "select_hour") + "<br>";
+
+    }else{
+
+      clock_hour.innerHTML += makeNumberBold(setZeroBefore(i), "select_hour");
+
+    }
+  }
 
   for(i = 1; i < 61; i++){
 
-    if(i%10 === 0){
+    if(i === 60){
+
+      clock_minute.innerHTML += makeNumberBold(setZeroBefore(0), "select_minute");
+      clock_second.innerHTML += makeNumberBold(setZeroBefore(0), "select_second");
+
+    }else if(i%10 === 0){
 
       clock_minute.innerHTML += makeNumberBold(setZeroBefore(i), "select_minute") + "<br>";
       clock_second.innerHTML += makeNumberBold(setZeroBefore(i), "select_second") + "<br>";
