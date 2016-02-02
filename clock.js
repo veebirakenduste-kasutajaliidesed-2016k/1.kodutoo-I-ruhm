@@ -1,5 +1,5 @@
-function startTime(){
-  var weekdays = ["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"];
+function startTime() {
+  var weekdays = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
   var today = new Date();
   var h = today.getHours();
   var m = today.getMinutes();
@@ -18,6 +18,8 @@ function startTime(){
   document.getElementById('minutebar').value = m;
   document.getElementById('secondbar').value = s;
 
+
+
   var hdeg = 360/24*h;
   var mdeg = 6*m+90;
   var sdeg = 6*s+90;
@@ -35,4 +37,5 @@ function checkTime(i) {
 function randcolor(){
   document.getElementById('txt').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
     document.getElementById('weekday').style.color = "#"+((1<<24)*Math.random()|0).toString(16);
+    
 }

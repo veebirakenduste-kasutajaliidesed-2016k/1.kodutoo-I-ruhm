@@ -38,7 +38,7 @@ progress::-webkit-progress-value {
   background: #FF0000;
 }
 #secondbar::-webkit-progress-value{
-  background: #0000FF;
+ background: #0000FF;
 }
 
 
