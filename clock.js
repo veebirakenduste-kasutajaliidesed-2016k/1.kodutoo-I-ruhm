@@ -35,3 +35,29 @@ number = '0' + number;
   }
 return number;
 }
+
+function changeBackground(){
+  if (document.getElementById('selectchange').value == "blackBackground") {
+      document.body.style.backgroundImage = "none";
+      document.body.style.backgroundColor = "#474747";
+      //document.getElementById('change').style.backgroundColor = "#474747";
+
+      //document.getElementById('change').style.backgroundImage = "none";
+  } else if (document.getElementById('selectchange').value == "defaultBackground") {
+    document.body.style.backgroundImage = "none')";
+    document.body.style.backgroundColor = "#D3DBDE";
+    //document.getElementById('change').style.backgroundColor = "#D3DBDE";
+
+    //document.getElementById('change').style.backgroundImage = "none";
+  }
+  else if (document.getElementById('selectchange').value == "sillyBackground") {
+    document.body.style.backgroundColor = "#FF6EBB";
+    //document.getElementById('change').style.backgroundColor = "#FF6EBB";
+    document.body.style.backgroundImage = "none";
+    //document.getElementById('change').style.backgroundImage = "none";
+  }
+  else if (document.getElementById('selectchange').value == "pictureBackground") {
+    document.body.style.backgroundImage = "url('blackbackground.png')";
+    //document.getElementById('change').style.backgroundImage = "url('blackbackground.png')";
+  }
+}
