@@ -1,1 +1,17 @@
-Siia tuleb css
+
+#clock{
+  color:pink;
+  font-size: 6em;
+  font-weight: bolder;
+
+}
+#date{
+  color: red;
+  font-size: 6em;
+  font-weight: bolder;
+  align-items: center;
+}
+body{
+  align-items: center;
+
+}
