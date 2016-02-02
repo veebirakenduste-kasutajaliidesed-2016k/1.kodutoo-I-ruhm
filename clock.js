@@ -14,6 +14,10 @@ function startTime() {
   document.getElementById('weekday').innerHTML=
   weekdays[d];
 
+  document.getElementById('hourprint').innerHTML = h;
+  document.getElementById('minuteprint').innerHTML = m;
+  document.getElementById('secondprint').innerHTML = s;
+
   document.getElementById('hourbar').value = h;
   document.getElementById('minutebar').value = m;
   document.getElementById('secondbar').value = s;

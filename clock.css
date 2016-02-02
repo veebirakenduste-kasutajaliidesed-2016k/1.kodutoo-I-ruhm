@@ -100,4 +100,13 @@ progress::-webkit-progress-value {
   font-size: 400%;
   min-height: 300px;
 }
+#progressbars{
+  color: white;
+  display: inline;
+  }
+.barnum{
+  float: right;
+  font-size: 200%;
+  width: 10%;
+}
 /*Jaan-Martin Kuusmann*/
