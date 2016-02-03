@@ -6,8 +6,8 @@
 body {
     background-image: url("clock.png");
     background-repeat: no-repeat;
-    background-color: black;
     background-position: center;
+    background-color: #ADD8E6;
     margin-bottom: 675px;
 }
 
@@ -16,6 +16,16 @@ h1{
   letter-spacing: 3px;
   font-family: digital;
   margin-top: 400px;
-  color: red;
+  color: white;
   font-size: 100px;
+}
+
+footer {
+  display: block;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:60px;
+  font-size:12px;
+
 }

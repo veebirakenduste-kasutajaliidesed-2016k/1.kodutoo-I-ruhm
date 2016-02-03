@@ -1,8 +1,8 @@
 // clock.js
+
 window.onload = function(){
 
   var clock = document.getElementById('clock');
-
 
   // enne timeouiti kirjutan ühe korra ära
   writeDate();
@@ -15,6 +15,7 @@ window.onload = function(){
   }, 1000);
 
 };
+
 
 function writeDate(){
 
@@ -34,4 +35,16 @@ function setZeroBefore(number) {
   }
 
   return number;
+}
+
+function clockRed() {
+  document.getElementById("clock").style.color = "red";
+}
+
+function clockGreen() {
+  document.getElementById("clock").style.color = "green";
+}
+
+function clockWhite() {
+  document.getElementById("clock").style.color = "white";
 }
