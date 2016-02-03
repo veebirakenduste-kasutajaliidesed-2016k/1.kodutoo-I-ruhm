@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kell</title>
+  <script src="clock.js"></script>
+  <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+
+<section>
+  <div id="display">
+    <div id="clock" class="clock">0:0:0</div>
+    <div id="date" class = "date"></div>
+
+  </div>
+</section>
+<div id="change">
+  <p> Background color:</p>
+    <select id="selectchange" onchange="changeBackground()">
+    <option value="defaultBackground" >Default</option>
+    <option value="blackBackground" >Dark</option>
+    <option value="sillyBackground" >Silly</option>
+    <option value="pictureBackground" >Picture</option>
+    </select>
+</select>
+</div>
+<section>
+
+
+<!--<button type="button" onclick="Mirror()">Mirror</button>
+<button type="button" onclick="UnMirror()">UnMirror</button>-->
+<button type="button" onclick="randomColors()">Randomize colors!</button>
+
+</section>
+
+
+</body>
+</html>
+<footer>
+  <p>Made by Karl Grossberg</p>
+</footer>
