@@ -4,6 +4,12 @@ window.onload = function(){
 
   var clock = document.getElementById('clock');
 
+  clock.addEventListener('click', function(){
+
+  window.location = "https://www.tlu.ee/";
+
+});
+
   // enne timeouiti kirjutan ühe korra ära
   writeDate();
 // millisekundid 1000ms = 1s
@@ -26,7 +32,8 @@ function writeDate(){
   var seconds = today.getSeconds();
 
   clock.innerHTML = setZeroBefore(hours) + ':' + setZeroBefore(minutes) + ':' + setZeroBefore(seconds);
-
+  document.getElementById("today").innerHTML = today;
+  // Arendan seda hiljem edasi, alguseks kõlbab
 }
 
 function setZeroBefore(number) {
@@ -47,4 +54,12 @@ function clockGreen() {
 
 function clockWhite() {
   document.getElementById("clock").style.color = "white";
+}
+
+function clockBig() {
+  document.getElementById("clock").style.fontSize = "130%";
+}
+
+function clockStandard() {
+  document.getElementById("clock").style.fontSize = "100%";
 }

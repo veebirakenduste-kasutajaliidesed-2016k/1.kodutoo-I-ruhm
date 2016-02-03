@@ -8,16 +8,21 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ADD8E6;
-    margin-bottom: 675px;
+    margin-bottom: 300px;
 }
 
 h1{
   text-align: center;
   letter-spacing: 3px;
   font-family: digital;
-  margin-top: 400px;
+  margin-top: 300px;
   color: white;
   font-size: 100px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 300px;
 }
 
 footer {
