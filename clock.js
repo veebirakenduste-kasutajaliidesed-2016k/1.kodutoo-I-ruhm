@@ -80,7 +80,7 @@ function showCurrentTime(number, format){
   var today = new Date();
 
   var year = today.getFullYear();
-  var month = today.getMonth();
+  var month = today.getMonth() + 1;
   var date = today.getDate();
   var hour = today.getHours();
   var minute = today.getMinutes();
