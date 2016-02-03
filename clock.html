@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="clock.js"></script>
+  <link href="main.css" rel="stylesheet">
+  <title>Clock</title>
+</head>
+<body onload="clockBars()">
+  <div id="box">
+    <div id="hourbox">
+      <div id="hourtime" class="timers">
+        <p>60</p>
+      </div>
+     <progress id="hourmeter" value="0" max="24"></progress>
+     </div>
+    <div id="minutebox">
+     <progress id="minutemeter" value="0" max="60"></progress>
+     </div>
+     <div id="minutetime" class="timers">
+       <p>60</p>
+     </div>
+   <div id="secondbox">
+     <progress id="secondmeter" value="0" max="60">
+  </div>
+  <div id="secondtime" class="timers">
+    <p>60</p>
+  </div>
+</div>
+<div id="date">
+  <p></p>
+</div>
+<div id="change">
+  <p> Changes</p>
+    <select id="selectchange" onchange="selectChange()">
+    <option value="revertchanges" >Normal</option>
+    <option value="blackbackground" >Nightmode</option>
+    <option value="date" >Date</option>
+</select>
+</div>
+</body>
+<footer>
+  <div id="footer">
+  <p> Ole Loigu </p>
+  </div>
+</footer>
+</html>
