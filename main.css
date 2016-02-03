@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Nrf;
+  src: url("Numberfont.ttf");
+}
+
+
+#hourmeter, #minutemeter, #secondmeter {
+  position: relative;
+  width:500px;
+  height: 100px;
+  align-items: center;
+  box-shadow: rgb(191, 191, 191) 1px 1px,
+    rgb(191, 191, 191) 2px 2px,
+    rgb(191, 191, 191) 3px 3px,
+    rgb(191, 191, 191) 4px 4px,
+    rgb(191, 191, 191) 5px 5px,
+    rgb(191, 191, 191) 6px 6px,
+    rgb(191, 191, 191) 7px 7px,
+    rgb(191, 191, 191) 8px 8px,
+    rgb(191, 191, 191) 9px 9px,
+    rgb(191, 191, 191) 10px 10px,
+    rgb(191, 191, 191) 11px 11px,
+    rgb(191, 191, 191) 12px 12px,
+    rgb(191, 191, 191) 13px 13px,
+    rgb(191, 191, 191) 14px 14px,
+    rgb(191, 191, 191) 15px 15px,
+    rgb(191, 191, 191) 16px 16px,
+    rgb(191, 191, 191) 17px 17px,
+    rgb(191, 191, 191) 18px 18px,
+    rgb(191, 191, 191) 19px 19px,
+    rgb(191, 191, 191) 20px 20px,
+    rgb(191, 191, 191) 21px 21px,
+    rgb(191, 191, 191) 22px 22px,
+    rgb(191, 191, 191) 23px 23px,
+    rgb(191, 191, 191) 24px 24px,
+    rgb(191, 191, 191) 25px 25px,
+    rgb(191, 191, 191) 26px 26px;
+    }
+
+#hourtime{
+  position: absolute;
+  width:50px;
+  align-items: center;
+  top:70px;
+  font-size: 50px;
+  left: 25%;
+  font-family: Nrf;
+  text-align: center;
+  z-index: 2;
+}
+#minutetime{
+  position: absolute;
+  height: 50px;
+  width:50px;
+  align-items: center;
+  top: 218px;
+  font-size: 30px;
+  left: 25%;
+  font-family: Nrf;
+  text-align: center;
+}
+#secondtime{
+  position: absolute;
+  width:50px;
+  align-items: center;
+  top:340px;
+  font-size: 19px;
+  left: 25%;
+  font-family: Nrf;
+  text-align: center;
+}
+#minutemeter {
+  width:500px;
+  height: 75px;
+  align-items: center;
+
+}
+#secondmeter {
+  width:500px;
+  height: 50px;
+  align-items: center;
+
+}
+body{
+  background-color: white;
+}
+#box{
+  top:35%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+progress {
+	width: 400px;
+	height: 14px;
+	margin: 50px auto;
+	display: block;
+	-webkit-appearance: none;
+	border: none;
+}
+
+#footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  font-family: Nrf;
+}
+
+progress::-webkit-progress-bar {
+	background: #f1f2f2;
+
+}
+
+#hourmeter::-webkit-progress-value{
+  background-color: #3EC1D3;
+  transition: width 1s ease-out;
+  border-radius: 2px 2px 2px 2px;
+}
+#minutemeter::-webkit-progress-value{
+  background-color: #FF9A00;
+  transition: width 1s ease-out;
+  border-radius: 2px 2px 2px 2px;
+}
+#secondmeter::-webkit-progress-value{
+  background-color: #FF165D;
+  transition: width 1s ease-out;
+  border-radius: 2px 2px 2px 2px;
+}
+select {
+    display: inline-block;
+    height:30px;
+    width: 150px;
+    padding: 2px 10px 2px 2px;
+    outline: none;
+    color: #74646e;
+    border: 1px solid #C8BFC4;
+    border-radius: 4px;
+    background: #fff;
+    font-family: Nrf;
+}
+
+#change{
+  position: absolute;
+  width:150px;
+  height: 75px;
+  text-align: center;
+  position:absolute;
+  z-index:15;
+  bottom:7%;
+  left:50%;
+  margin:0 0 0 -70px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 15px 15px 0px 0px;
+  font-family: Nrf;
+}
+
+#date{
+  position: fixed;
+  top: 50  %;
+  width: 100%;
+  text-align: center;
+  font-size: 70px;
+  font-family: Nrf;
+}
