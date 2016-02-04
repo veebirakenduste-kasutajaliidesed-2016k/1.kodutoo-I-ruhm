@@ -1,5 +1,11 @@
 // clock.js
 
+$('.dropdown-toggle').dropdown()
+
+$('#myDropdown').on('show.bs.dropdown', function () {
+  // do something…
+})
+
 window.onload = function(){
 
   var clock = document.getElementById('clock');
@@ -27,13 +33,16 @@ function writeDate(){
 
   var today = new Date();
 
+  var day = today.getDay();
+  var month = today.getMonth() + 1;
+  var year = today.getFullYear();
+
   var hours = today.getHours();
   var minutes = today.getMinutes();
   var seconds = today.getSeconds();
 
   clock.innerHTML = setZeroBefore(hours) + ':' + setZeroBefore(minutes) + ':' + setZeroBefore(seconds);
-  document.getElementById("today").innerHTML = today;
-  // Arendan seda hiljem edasi, alguseks kõlbab
+  document.getElementById("today").innerHTML = setZeroBefore(day) + "." + setZeroBefore(month) + "." + (year);
 }
 
 function setZeroBefore(number) {
