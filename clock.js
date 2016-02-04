@@ -7,18 +7,20 @@ window.onload = function(){
   var clock_minute = document.getElementById("clock_minute");
   var clock_second = document.getElementById("clock_second");
 
+  writeTime();
+
   window.setInterval(function(){writeTime();}, 1000);
 
 };
 
 function writeTime(){
 
-  clock_year.innerHTML = "AASTA <br>";
-  clock_month.innerHTML = "KUU <br>";
-  clock_date.innerHTML = "KUUPÄEV <br>";
-  clock_hour.innerHTML = "TUND <br>";
-  clock_minute.innerHTML = "MINUT <br>";
-  clock_second.innerHTML = "SEKUND <br>";
+  clock_year.innerHTML = "";
+  clock_month.innerHTML = "";
+  clock_date.innerHTML = "";
+  clock_hour.innerHTML = "";
+  clock_minute.innerHTML = "";
+  clock_second.innerHTML = "";
 
   for(i = 1; i < 13; i++){
     if(i%2 === 0){
@@ -87,21 +89,29 @@ function showCurrentTime(number, format){
   var second = today.getSeconds();
 
   if(format === "select_year" && number === year){
-      number = "<b>" + number + "<b>";
+      number = "<font color='black'><b>" + number + "</font></b>";
   }else if(format === "select_month" && number === setZeroBefore(month)){
-      number = "<b>" + number + "<b>";
+      number = "<font color='black'><b>" + number + "</font></b>";
   }else if(format === "select_date" && number === setZeroBefore(date)){
-      number = "<b>" + number + "<b>";
+      number = "<font color='black'><b>" + number + "</font></b>";
   }else if(format === "select_hour" && number === setZeroBefore(hour)){
-      number = "<b>" + number + "<b>";
+      number = "<font color='black'><b>" + number + "</font></b>";
   }else if(format === "select_minute" && number === setZeroBefore(minute)){
-      number = "<b>" + number + "<b>";
+      number = "<font color='black'><b>" + number + "</font></b>";
   }else if(format === "select_second" && number === setZeroBefore(second)){
-      number = "<b>" + number + "<b>";
+      number = "<font color='black'><b>" + number + "</font></b>";
   }
   return number;
 
 }
+
+
+
+
+
+
+
+
 
 /*
 
