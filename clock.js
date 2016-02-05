@@ -34,3 +34,16 @@ function setZeroBefore(number) {
   }
   return number;
   }
+
+  function myFunctionSmall() {
+      document.getElementById("clock").style.fontSize = '50px';
+  }
+  function myFunctionLarge() {
+      document.getElementById("clock").style.fontSize = '100px';
+  }
+  function myFunctionInitial() {
+      document.getElementById("clock").style.fontSize = '150px';
+  }
+
+
+//http://www.w3schools.com/jsref/prop_style_fontsize.asp
