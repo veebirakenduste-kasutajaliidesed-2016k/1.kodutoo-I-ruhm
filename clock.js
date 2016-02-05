@@ -4,10 +4,13 @@ window.onload = function(){
   var clock_year = document.getElementById("clock_year");
   var clock_month = document.getElementById("clock_month");
   var clock_date = document.getElementById("clock_date");
+  var clock_day = document.getElementById("clock_day");
   var clock_hour = document.getElementById("clock_hour");
   var clock_minute = document.getElementById("clock_minute");
   var clock_second = document.getElementById("clock_second");
+
   var theme = "style_1";
+  var day_as_word = "style_1";
 
   writeTime();
 
@@ -24,6 +27,22 @@ window.onload = function(){
       theme = "style_1";
     }
   });
+
+  clock_date.addEventListener('click', function(){
+
+    var today = new Date();
+    var day = today.getDay();
+    var days = ["ESMASPÄEV", "TEISIPÄEV", "KOLMAPÄEV", "NELJAPÄEV", "REEDE", "LAUPÄEV", "PÜHAPÄEV"];
+
+    if(day_as_word === "style_1"){
+      clock_day.innerHTML = days[day - 1];
+      day_as_word = "style_2";
+    } else {
+      clock_day.innerHTML = "";
+      day_as_word = "style_1";
+    }
+  });
+
 };
 
 function writeTime(){
@@ -117,19 +136,3 @@ function showCurrentTime(number, format){
   return number;
 
 }
-
-
-
-/*
-window.addEventListener('keypress', function(){
-
-  console.log(event);
-
-  if(event.charCode == 13){
-
-    alert('enter');
-  }
-
-});
-
-*/

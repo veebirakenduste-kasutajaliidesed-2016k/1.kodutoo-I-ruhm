@@ -22,3 +22,11 @@ p {
   top: 50px;
   width: 100%;
 }
+
+#clock_day {
+  position: fixed;
+  text-align: center;
+  bottom: 100px;
+  width: 100%;
+  font-size: 45px;
+}
