@@ -24,8 +24,8 @@ function writeDate(){
   var hours = today.getHours();
   var minutes  = today.getMinutes();
   var seconds = today.getSeconds();
-  clock.innerHTML = ' Time:' +  setZeroBefore (hours) + ':' + setZeroBefore(minutes) +':'+ setZeroBefore(seconds);
-  dateyear.innerHTML = 'Date:' + '.' + setZeroBefore(date) + '.' + setZeroBefore(month+1) + '.' + year;
+  clock.innerHTML = ' Time:' +  setZeroBefore (hours) + ':' + setZeroBefore(minutes) +':'+ setZeroBefore(seconds) +
+  ' Date:' + setZeroBefore(date) + '.' + setZeroBefore(month+1) + '.' + year;
 }
 
 function setZeroBefore(number) {
@@ -34,5 +34,3 @@ function setZeroBefore(number) {
   }
   return number;
   }
-
-  

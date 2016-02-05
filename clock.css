@@ -1,19 +1,33 @@
 .footer {
   font-family: arial narrow;
   position: absolute;
+  text-align: center;
   right: 0;
   bottom: 0;
-  left: 10px;
-  padding: 5px;
+  left: 0;
   background-color: #efefef;
-  text-align: left;
+
 /*abiks: http://codepen.io/cbracco/pen/zekgx*/
 }
 
-#clock, #dateyear {
+  body {
+      background-color:grey;
+      
+  }
 
-	width:100%;
-  font-family: arial narrow;
-  text-align: center;
-  background-color: #d1d1d1;
+  #clock{
+      height: 100px;
+      width: 100%;
+      position: relative;
+      top: 0; left: 0; bottom: 0; right: 0;
+      padding-top: 70px;
+      font-family: courier, monospace;
+      text-align: center;
+      color: white;
+      font-size: 8vw;
+      /*https://googlecreativelab.github.io/coder-projects/projects/digital_clock with some changes from me*/
+  }
+
+  #clock:hover {
+      color: lightblue;
   }
