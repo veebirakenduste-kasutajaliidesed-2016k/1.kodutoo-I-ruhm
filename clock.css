@@ -1,0 +1,36 @@
+@font-face {
+    font-family: digital;
+    src: url(DS-DIGI.TTF);
+}
+
+body {
+    background-image: url("clock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ADD8E6;
+    margin-bottom: 300px;
+}
+
+h1{
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: digital;
+  margin-top: 300px;
+  color: white;
+  font-size: 100px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 300px;
+}
+
+footer {
+  display: block;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:60px;
+  font-size:12px;
+
+}
