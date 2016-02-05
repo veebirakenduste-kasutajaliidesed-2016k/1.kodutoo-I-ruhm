@@ -16,6 +16,8 @@ window.onload = function(){
 
   window.setInterval(function(){writeTime();}, 1000);
 
+  /* Kasutaja saab kahekordse hiireklõpsuga muuta tausta värvi, hiireklõpsud
+  peavad toimuma kella peal. */
   clock.addEventListener('dblclick', function(){
     if(theme === "style_1"){
       document.body.style.backgroundColor="#989898";
@@ -28,6 +30,8 @@ window.onload = function(){
     }
   });
 
+  /* Kui kasutaja vajutab hiirega kuupäeva peal, siis tuleb
+   esile nädalapäeva nimetus. */
   clock_date.addEventListener('click', function(){
 
     var today = new Date();
@@ -43,6 +47,7 @@ window.onload = function(){
     }
   });
 
+  /* Numbritega 1,2,3 saab kasutaja muuta kella suurust. */
   window.addEventListener('keypress', function(event){
 
     var key_code = event.keyCode;
@@ -57,6 +62,8 @@ window.onload = function(){
   });
 };
 
+/* Siin tuuakse tsükleid kasutades esile kõik numbrid, mis kella ja kuupäeva
+jaoks vajalikud on. */
 function writeTime(){
 
   clock_year.innerHTML = "";
@@ -109,7 +116,6 @@ function writeTime(){
       clock_second.innerHTML += showCurrentTime(setZeroBefore(i), "select_second");
     }
   }
-
 }
 
 function setZeroBefore(number){
@@ -118,9 +124,9 @@ function setZeroBefore(number){
     number = '0' + number;
   }
   return number;
-
 }
 
+/* Siin märgistatakse rasvalt ära praegune kellaaeg. */
 function showCurrentTime(number, format){
 
   var today = new Date();
@@ -146,5 +152,4 @@ function showCurrentTime(number, format){
       number = "<font color='black'><b>" + number + "</font></b>";
   }
   return number;
-
 }
