@@ -1,18 +1,13 @@
 // clock.js
 
-$('.dropdown-toggle').dropdown()
-
-$('#myDropdown').on('show.bs.dropdown', function () {
-  // do something…
-})
-
 window.onload = function(){
 
   var clock = document.getElementById('clock');
 
   clock.addEventListener('click', function(){
 
-  window.location = "https://www.tlu.ee/";
+  document.getElementById("clock").style.fontFamily = "Comic Sans MS";
+  document.body.style.backgroundColor = "#FF00FF";
 
 });
 
