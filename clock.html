@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"  onclick="change()">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>kell</title>
+    <script src="clock.js"></script>
+
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Oswald:700:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+
+  </head>
+  <body>
+
+    <div id="box" onclick="boxMove()">
+      Kell on: <br><div id="clock"></div>
+      Tänane kuupäev on: <br><div id="date"></div>
+    </div>
+
+    <footer>
+      &copy; Kristian Talviste 2015
+    </footer>
+  </body>
+</html>
