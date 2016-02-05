@@ -1,0 +1,19 @@
+.footer {
+  font-family: arial narrow;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  padding: 5px;
+  background-color: #efefef;
+  text-align: left;
+/*abiks: http://codepen.io/cbracco/pen/zekgx*/
+}
+
+#clock, #dateyear {
+
+	width:100%;
+  font-family: arial narrow;
+  text-align: center;
+  background-color: #d1d1d1;
+  }
