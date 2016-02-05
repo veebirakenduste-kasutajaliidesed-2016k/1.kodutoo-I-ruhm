@@ -43,6 +43,18 @@ window.onload = function(){
     }
   });
 
+  window.addEventListener('keypress', function(event){
+
+    var key_code = event.keyCode;
+
+    if(key_code === 49) {
+      document.body.style.fontSize="10px";
+    }else if(key_code === 50){
+      document.body.style.fontSize="15px";
+    }else if(key_code === 51){
+      document.body.style.fontSize="20px";
+    }
+  });
 };
 
 function writeTime(){
