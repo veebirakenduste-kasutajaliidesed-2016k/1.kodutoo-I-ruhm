@@ -1,0 +1,39 @@
+.footer {
+  font-family: arial narrow;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #efefef;
+
+/*abiks: http://codepen.io/cbracco/pen/zekgx*/
+}
+
+
+
+  #clock{
+      height: 100px;
+      position: relative;
+      top: 0; left: 0; bottom: 0; right: 0;
+      padding-top: 70px;
+      font-family: courier, monospace;
+      text-align: center;
+      color: white;
+      font-size: 8vw;
+      display: flex;
+	  	width:100%;
+      /*https://googlecreativelab.github.io/coder-projects/projects/digital_clock with some changes from me*/
+  }
+
+  #clock:hover {
+      color: lightblue;
+  }
+
+
+
+  body, div {
+      background-color:grey;
+      width:100%;
+
+  }
