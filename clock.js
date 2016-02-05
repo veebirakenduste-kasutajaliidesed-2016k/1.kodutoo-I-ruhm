@@ -1,16 +1,29 @@
 window.onload = function(){
 
+  var clock = document.getElementById("clock");
   var clock_year = document.getElementById("clock_year");
   var clock_month = document.getElementById("clock_month");
   var clock_date = document.getElementById("clock_date");
   var clock_hour = document.getElementById("clock_hour");
   var clock_minute = document.getElementById("clock_minute");
   var clock_second = document.getElementById("clock_second");
+  var theme = "style_1";
 
   writeTime();
 
   window.setInterval(function(){writeTime();}, 1000);
 
+  clock.addEventListener('dblclick', function(){
+    if(theme === "style_1"){
+      document.body.style.backgroundColor="#989898";
+      document.body.style.color="#FFFFFF";
+      theme = "style_2";
+    } else {
+      document.body.style.backgroundColor="#FFFFFF";
+      document.body.style.color="#989898";
+      theme = "style_1";
+    }
+  });
 };
 
 function writeTime(){
@@ -107,20 +120,7 @@ function showCurrentTime(number, format){
 
 
 
-
-
-
-
-
-
 /*
-
-clock_hour.addEventListener('click', function(){
-
-  console.log("click");
-
-});
-
 window.addEventListener('keypress', function(){
 
   console.log(event);
