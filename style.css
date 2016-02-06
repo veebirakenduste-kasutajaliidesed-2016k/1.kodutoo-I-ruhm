@@ -1,0 +1,51 @@
+html,
+body 
+ {
+	
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+#clock, #kell
+{
+	width: 860px ;
+	height: 360px ;
+	position: absolute;
+    top:0;
+    bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+	font-size: 200px;
+	/*border: solid 10px;*/
+	font-family: cool;
+	text-align: center;
+	/*color:red;*/
+}
+
+@font-face
+{
+	font-family:cool;
+	src: url("KGBlankSpaceSketch.ttf") format("truetype");
+}
+
+#kp
+{
+	font-size:40px;
+}
+
+#giphy
+{
+	background-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#musa
+{
+	margin-left:42%;
+	width:300px;
+	height:25px;
+}
