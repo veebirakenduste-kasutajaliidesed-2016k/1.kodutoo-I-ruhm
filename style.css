@@ -1,7 +1,6 @@
 html,
 body 
  {
-	
 	height: 100%;
 	width: 100%;
 	padding: 0;
@@ -9,8 +8,8 @@ body
 
 #clock, #kell
 {
-	width: 860px ;
-	height: 360px ;
+	width: 920px ;
+	height: 380px ;
 	position: absolute;
     top:0;
     bottom: 0;

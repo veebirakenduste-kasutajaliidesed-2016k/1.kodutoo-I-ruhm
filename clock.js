@@ -13,6 +13,7 @@
 		console.log(color1);
 		count1++;
 		clock.style.color = color1;
+		clock.style.border = color1;
 	
 		if(count1 > 5){
 			
@@ -22,14 +23,14 @@
 
 	});
 
-   /*window.addEventListener('keypress', function(event){
+   window.addEventListener('keypress', function(event){
      console.log(event);
 
      if(event.keyCode == 13){
-       alert('enter');
+       clock.style.border = "solid 10px";
      }
 
-   });*/
+   });
 
    // enne timeouti kirjutan uhe korra ara
    writeDate();
