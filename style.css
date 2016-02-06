@@ -1,3 +1,12 @@
+html,
+body 
+ {
+	
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
 #clock
 {
 	width: 860px ;
@@ -24,4 +33,17 @@
 #kp
 {
 	font-size:40px;
+}
+
+#giphy
+{
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#musa
+{
+	margin-left:42%;
+	width:300px;
+	height:25px;
 }

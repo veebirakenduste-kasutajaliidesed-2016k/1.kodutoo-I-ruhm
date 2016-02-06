@@ -26,8 +26,28 @@
      // iga ooteaja jarel kaivitatakse
      writeDate();
 
-   }, 1000);// millisekundid - 1000ms = 1s
+   }, 500);// millisekundid - 1000ms = 1s
+   
+   var count = 0;
+	
+	window.setInterval(function(){
+	
+		if(count > 9){
+			count = 0;
+		}
+		
+		console.log(count);
+		var url = json.data[count].images.original.url;
+		
+		document.getElementById("giphy").style.backgroundImage = 'url('+url+')';
+		
+		console.log(url);
+		
+		count++;
+     
 
+   }, 2500);// millisekundid - 1000ms = 1s
+	
 
  };
 
