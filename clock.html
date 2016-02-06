@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kell</title>
+  <script src="clock.js"> </script>
+  <link rel="stylesheet" type="text/css" href="clock.css"
+
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js"></script>
+  <title>Tausta muutmine</title>
+
+
+</head>
+<body>
+  <div id="clock">0:0:0</div>
+
+  <script type="text/javascript">
+  $(document).ready(function()
+  {
+
+  function toggle_color(color1,color2,cycle_time,wait_time) {
+  setInterval(function first_color() {
+      $("body").animate({
+          backgroundColor: color1
+      }, 1000, function () {
+          setTimeout(change_color, wait_time);
+      });
+  }, cycle_time);
+
+  function change_color() {
+      $("body").animate({
+          backgroundColor: color2
+      }, 1000, function () {
+          setTimeout(function () {}, wait_time);
+      });
+  }
+  }
+
+  toggle_color('#000000 ','#484848 ',4000,1000);
+  });
+  </script>
+</body>
+</html>
