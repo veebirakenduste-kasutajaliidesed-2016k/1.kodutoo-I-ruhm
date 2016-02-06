@@ -1,0 +1,41 @@
+@font-face {
+  font-family:comicsans;
+  src:url(comicsans.ttf);
+}
+body{
+  background-color: #00FFFF;
+}
+/*kell*/
+#clock{
+  font-family: comicsans;
+  font-size: 100px;
+  text-align: center;
+}
+/*kuupäev*/
+#date{
+  font-family: comicsans;
+  font-size: 50px;
+  text-align: center;
+}
+/*autor*/
+#footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+/*põhiosa*/
+section{
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  margin: auto;
+  width: 450px;
+  background-color: #00FFFF;
+  border-radius: 25px;
+}
+section:hover{
+  background-color: white;
+  transition: 1s ease-in;
+}
