@@ -1,8 +1,7 @@
 window.onload = function(){
+  document.body.style.backgroundColor = "yellow";
   var clock = document.getElementById('clock');
-  var date = document.getElementById("date");
   var final = document.getElementById("final");
-  document.getElementById("clock").style.fontFamily = "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/font1.ttf";
   document.getElementById('clockface').addEventListener('click', changeClock);
   final.style.margin = "-35% 25%";
   final.style.opacity = "0.8";
@@ -11,6 +10,11 @@ window.onload = function(){
   window.addEventListener('keypress', function (e) {
       if (e.keyCode == 49) {
           changeClock();
+      }
+  }, false);
+  window.addEventListener('keypress', function (e) {
+      if (e.keyCode == 50) {
+          changeBackground();
       }
   }, false);
   //Aeg millisekundites
@@ -38,25 +42,28 @@ function setZeroBefore(number){
 }
 function changeClock(){
   var clockface = document.getElementById("clockface");
-  if (clockface.src == "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock1.png"){
-    clockface.src = "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock2.png";
+  if (clockface.src == "http://i.imgur.com/HANJNFG.png"){
+    clockface.src = "http://i.imgur.com/38D3QQM.png";
   }
-  else if (clockface.src == "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock2.png"){
-    clockface.src = "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock3.png";
+  else if (clockface.src == "http://i.imgur.com/38D3QQM.png"){
+    clockface.src = "http://i.imgur.com/rn55Pwf.png";
   }
-  else if (clockface.src == "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock3.png"){
-    clockface.src = "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock1.png";
+  else if (clockface.src == "http://i.imgur.com/rn55Pwf.png"){
+    clockface.src = "http://i.imgur.com/HANJNFG.png";
   }
 }
-function changeClock(){
-  var clockface = document.getElementById("clockface");
-  if (clockface.src == "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock1.png"){
-    clockface.src = "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock2.png";
+function changeBackground(){
+  var background = document.body.style.backgroundColor;
+  if (document.body.style.backgroundColor == "yellow"){
+    document.body.style.backgroundColor = "blue";
   }
-  else if (clockface.src == "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock2.png"){
-    clockface.src = "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock3.png";
+  else if (document.body.style.backgroundColor == "blue"){
+    document.body.style.backgroundColor = "gray";
   }
-  else if (clockface.src == "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock3.png"){
-    clockface.src = "http://localhost:5555/~robigin/kasutajaliidesed/1.kodutoo-I-ruhm/clock1.png";
+  else if (document.body.style.backgroundColor == "gray"){
+    document.body.style.backgroundColor = "green";
+  }
+  else if (document.body.style.backgroundColor == "green"){
+    document.body.style.backgroundColor = "yellow";
   }
 }
