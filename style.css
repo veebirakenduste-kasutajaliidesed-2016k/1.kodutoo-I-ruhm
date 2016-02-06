@@ -7,7 +7,7 @@ body
 	padding: 0;
 }
 
-#clock
+#clock, #kell
 {
 	width: 860px ;
 	height: 360px ;
@@ -37,8 +37,10 @@ body
 
 #giphy
 {
-	background-size:cover;
+	background-color: black;
+	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
 #musa

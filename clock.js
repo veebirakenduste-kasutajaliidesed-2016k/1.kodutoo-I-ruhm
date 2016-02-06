@@ -3,20 +3,21 @@
 
    var clock = document.getElementById('clock');
 
-   clock.addEventListener('click', function(){
+	clock.addEventListener('click', function(){
 
-     console.log('klikk');
+	document.getElementById("kell").style.color = "green";
+	//console.log('klikk');
 
-   });
+	});
 
-   /*window.addEventListener('keypress', function(event){
+   window.addEventListener('keypress', function(event){
      console.log(event);
 
-     if(event.charCode == 13){
+     if(event.keyCode == 13){
        alert('enter');
      }
 
-   });*/
+   });
 
    // enne timeouti kirjutan uhe korra ara
    writeDate();
@@ -36,24 +37,23 @@
 			count = 0;
 		}
 		
-		console.log(count);
+		//console.log(count);
 		var url = json.data[count].images.original.url;
 		
 		document.getElementById("giphy").style.backgroundImage = 'url('+url+')';
 		
-		console.log(url);
+		//console.log(url);
 		
 		count++;
      
 
-   }, 2500);// millisekundid - 1000ms = 1s
+   }, 1000);// millisekundid - 1000ms = 1s
 	
 
  };
 
 function writeDate(){
 
-  // tanane kp: Mon Feb 01 2016 12:42:44 GMT+0200 (FLE Standard Time)
 	var today = new Date();
 	
 	months = ["Jaanuar","Veebruar","Marts","Aprill","Mai","Juuni","Juuli","August","September","Oktoober","November","Detsember"];
@@ -67,11 +67,10 @@ function writeDate(){
 	
 	seconds = setZeroBefore(seconds);
 
-	clock.innerHTML = setZeroBefore(hours) + ':'+ minutes + ':' + seconds + "<br><p id='kp'>" + date + ". " + months[month] + " " + year + "<p>";
+	clock.innerHTML = "<p id='kell'>" + setZeroBefore(hours) + ':'+ minutes + ':' + seconds + "</p><br><p id='kp'>" + date + ". " + months[month] + " " + year + "</p>";
 
 }
 
-// lisab nulli kui arv on 10st vaiksem
 function setZeroBefore(number) {
   if(number < 10){
     number = '0' + number;
@@ -79,3 +78,23 @@ function setZeroBefore(number) {
 
   return number;
 }
+
+/*function changeClockColor(){
+	
+	var color = document.getElementById("clockColor").value
+	
+	var count1 = 0;
+	
+	if(typeof color !='undefined'){
+		
+		window.setInterval(function(){
+		
+			document.getElementById("kell").style.color = "green";
+		
+		}, 1);
+		
+	}
+	
+	console.log(color)
+	
+}*/

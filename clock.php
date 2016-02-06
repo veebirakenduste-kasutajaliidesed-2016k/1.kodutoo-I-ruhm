@@ -1,5 +1,6 @@
 <?php
-$url = "http://api.giphy.com/v1/gifs/search?q=henry&api_key=dc6zaTOxFJmzC&limit=10";
+$crit = $_POST["search"];
+$url = "http://api.giphy.com/v1/gifs/search?q=.$crit.&api_key=dc6zaTOxFJmzC&limit=10";
 //print_r(json_decode(file_get_contents($url)));
 ?>
 <!doctype html>
@@ -14,6 +15,10 @@ $url = "http://api.giphy.com/v1/gifs/search?q=henry&api_key=dc6zaTOxFJmzC&limit=
 	<script src="clock.js"></script>
 </head>
 <body id="giphy">
+	<form method="post">
+		<input type="text" name="search">
+		<input type="submit" value="Otsi!">
+	</form>
 	<div id="clock"></div>
 	<div id="musa">
 		<audio controls loop>
@@ -21,5 +26,6 @@ $url = "http://api.giphy.com/v1/gifs/search?q=henry&api_key=dc6zaTOxFJmzC&limit=
 			Your browser does not support the audio element.
 		</audio>
 	</div>
+	<!--<input type="submit" id="clockColor" onclick="changeClockColor()">-->
 </body>
 </html>
