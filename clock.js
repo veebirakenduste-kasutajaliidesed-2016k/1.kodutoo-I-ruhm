@@ -62,6 +62,7 @@ function bigger() {
 function reset() {
   document.getElementById("clock").style.fontSize = "50pt";
   document.getElementById("clock").style.padding  = "100px 0px 0px 0px";
+  //algne suurus ja asukoht
 }
 
 function moveUp() {
