@@ -11,5 +11,20 @@
 <body>
   <div align="center" id="clock">0:0:0</div>
   <canvas id="myCanvas" width="550" height="550" style="border:2px solid #99FFCC;border-radius:25px;"></canvas>
+  <script>
+  var canvas=document.getElementById("myCanvas");
+  var ctx=canvas.getContext("2d");
+  var grd=ctx.createLinearGradient(0,canvas.height,canvas.width,canvas.height);
+  grd.addColorStop(0,"#99FFCC");
+  grd.addColorStop(0.5,"white");
+  grd.addColorStop(1,"#99FFCC");
+  ctx.fillStyle=grd;
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+  
+  var radius=canvas.height/2;
+  ctx.translate(radius,radius);
+  radius=radius*0.9;
+  drawClock();
+  </script>
 </body>
 </html>
