@@ -8,7 +8,10 @@ body
   font-size: 100px;
 }
 
-
+script
+{
+	background-color: white;
+}
 
 .b1
 {
@@ -33,4 +36,9 @@ body
 .b5
 {
 	background-color: white;
+}
+
+footer
+{
+	font-size: 2em;
 }
