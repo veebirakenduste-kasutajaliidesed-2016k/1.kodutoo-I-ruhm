@@ -2,6 +2,7 @@ window.onload = function(){
 
   var clock = document.getElementById('clock');
 
+  var clock = document.getElementById('date');
 
   window.setInterval(function(){
 
@@ -16,13 +17,17 @@ window.onload = function(){
 function writeDate(){
 
  // tänane kp: Mon Feb 01 2016 12:42:44 GMT+0200 (FLE Standard Time)
- var today = new Date();
+ var today = new Date
 
  var hours = setZeroBefore(today.getHours());
  var minutes = setZeroBefore(today.getMinutes());
  var seconds = setZeroBefore(today.getSeconds());
 
- clock.innerHTML = hours + ':'+ minutes + ':' + seconds;
+ var day = today.getDay();
+ var month = today.getMonth() + 1;
+ var year = today.getFullYear();
+
+ clock.innerHTML = hours + ':'+ minutes + ':' + seconds + ' ' + setZeroBefore(day) + '.' + setZeroBefore(month+1) + '.' + year;
 
 }
 //lisab nulli kui arv on kymnest väiksem
