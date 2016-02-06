@@ -2,22 +2,34 @@
  window.onload = function(){
 
    var clock = document.getElementById('clock');
+   var count1 = 0;
+   clock.style.color = "magenta";
+   colors = ["red", "black", "green", "blue", "yellow", "cyan"];
+   var color1 = 0;
 
 	clock.addEventListener('click', function(){
-
-	document.getElementById("kell").style.color = "green";
-	//console.log('klikk');
+		
+		color1 = colors[count1];
+		console.log(color1);
+		count1++;
+		clock.style.color = color1;
+	
+		if(count1 > 5){
+			
+			count1 = 0;
+			
+		}
 
 	});
 
-   window.addEventListener('keypress', function(event){
+   /*window.addEventListener('keypress', function(event){
      console.log(event);
 
      if(event.keyCode == 13){
        alert('enter');
      }
 
-   });
+   });*/
 
    // enne timeouti kirjutan uhe korra ara
    writeDate();
@@ -78,23 +90,3 @@ function setZeroBefore(number) {
 
   return number;
 }
-
-/*function changeClockColor(){
-	
-	var color = document.getElementById("clockColor").value
-	
-	var count1 = 0;
-	
-	if(typeof color !='undefined'){
-		
-		window.setInterval(function(){
-		
-			document.getElementById("kell").style.color = "green";
-		
-		}, 1);
-		
-	}
-	
-	console.log(color)
-	
-}*/

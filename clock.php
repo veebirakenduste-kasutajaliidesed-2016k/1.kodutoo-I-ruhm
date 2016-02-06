@@ -1,7 +1,16 @@
 <?php
-$crit = $_POST["search"];
+
+$crit = "cat";
+
+if(isset($_GET["submit"])){
+	
+	$crit = $_GET["search"];
+
+}
+
 $url = "http://api.giphy.com/v1/gifs/search?q=.$crit.&api_key=dc6zaTOxFJmzC&limit=10";
 //print_r(json_decode(file_get_contents($url)));
+//echo $crit;
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,9 +24,9 @@ $url = "http://api.giphy.com/v1/gifs/search?q=.$crit.&api_key=dc6zaTOxFJmzC&limi
 	<script src="clock.js"></script>
 </head>
 <body id="giphy">
-	<form method="post">
+	<form method="get">
 		<input type="text" name="search">
-		<input type="submit" value="Otsi!">
+		<input type="submit" name="submit" value="Otsi!">
 	</form>
 	<div id="clock"></div>
 	<div id="musa">
