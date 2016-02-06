@@ -2,14 +2,25 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Kell</title>
+  <title>Clock</title>
   <script src="clock.js"></script>
+  <link rel="stylesheet" href="clock.css">
 </head>
 
 
 
-<body>
-  <div align="center" id="clock">0:0:0</div>
+<body align="center">
+
+  <input type="submit" value="" id="background1" class="b1"></input>
+  <input type="submit" value="" id="background2" class="b2"></input>
+  <input type="submit" value="" id="background3" class="b3"></input>
+  <input type="submit" value="" id="background4" class="b4"></input>
+  <input type="submit" value="" id="background5" class="b5"></input><br></br>
+  
+  <input type="submit" value="Bigger" id="bigger"></input>
+  <input type="submit" value="Normal" id="normal"></input>
+
+  <div align="center" id="date"></div>
   <div align="center">
   <canvas id="myCanvas" width="550" height="550" style="border:2px solid #99FFCC;border-radius:25px;"></canvas>
   <script>
