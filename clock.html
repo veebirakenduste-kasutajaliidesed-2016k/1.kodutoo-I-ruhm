@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Kell</title>
   <script src="clock.js"></script>
 </head>
@@ -25,11 +25,12 @@
   ctx.translate(radius,radius);
   radius=radius*0.9;
   drawClock();
+  setInterval(drawClock, 1000);
   
   function drawClock(){
 	
 	drawFace(ctx,radius);
-	drawNumber(ctx,radius);
+	drawNumbers(ctx,radius);
 	drawTime(ctx,radius);
   }
   
@@ -51,9 +52,28 @@
   
   ctx.beginPath();
   ctx.arc(0,0,radius*0.1,0,2*Math.PI);
-  ctx.fillStyle="#99FFCC";
+  ctx.fillStyle="black";
   ctx.fill();
   
+  }
+  
+  function drawNumbers(ctx,radius){
+	var ang;
+	var num;
+	ctx.font=radius*0.15+"px arial";
+	ctx.textBaseline="middle";
+	ctx.textAlign="center";
+	for(num=1;num<13;num++)
+	{
+		ang=num*Math.PI/6;
+		ctx.rotate(ang);
+		ctx.translate(0,-radius*0.85);
+		ctx.rotate(-ang);
+		ctx.fillText(num.toString(), 0, 0);
+		ctx.rotate(ang);
+		ctx.translate(0,radius*0.85);
+		ctx.rotate(-ang);
+	}
   }
   </script>
 </body>
