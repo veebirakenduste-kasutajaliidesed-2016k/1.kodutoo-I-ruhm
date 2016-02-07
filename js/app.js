@@ -3,6 +3,18 @@ var array1 = ['Pühapäev','Esmaspäev','Teisipäev','Kolmapäev','Neljapäev','
 	fonts = ['f1','f2','f3','f4'],
 	style,
 	fontSize;
+var HttpClient = function() {
+	this.get = function(Url, callback) {
+		xmlHttpRequest = new XMLHttpRequest();
+		xmlHttpRequest.onreadystatechange = function() { 
+			if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200)
+				callback(xmlHttpRequest.responseText);
+		}
+
+		xmlHttpRequest.open( "GET", Url, true );	
+		xmlHttpRequest.send( null );
+	}
+}
 function _(el){
 	return document.getElementById(el);
 }
@@ -36,16 +48,20 @@ function add(){
 	_('time').style.fontSize = (fontSize + 4) + 'px';
 }
 function setFonts(input){
-	if(input !== null){
+	if(input != null){
 		_('date').className = "";
 		_('time').className = "";
+		_('city').className = "";
 		_('date').className = fonts[input];
 		_('time').className = fonts[input];
+		_('city').className = fonts[input];
 	} else {
 	_('date').className = "";
 	_('time').className = "";
+	_('city').className = "";
 	_('date').className = fonts[random()];
 	_('time').className = fonts[random()];
+	_('city').className = fonts[random()];
 	}
 }
 function setTime(){
@@ -63,6 +79,14 @@ function setTime(){
 	month = array2[month];
 	_('time').innerHTML = hrs+':'+min;
 	_('date').innerHTML = weekday+', '+day+' '+month;
+}
+
+function httpGet(url)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", url, true); // false for synchronous request
+    xmlHttp.send();
+    return xmlHttp.responseText;
 }
 
 window.onload = function(){
@@ -108,6 +132,13 @@ window.onload = function(){
 			*	nt documnet/window.addEventListener('keydown'... ei mõikanud arrow keydele moz/chrome'is
 			*/
 		}
+	
+	Client = new HttpClient();
+		Client.get('http://ipinfo.io/?callback', function(callback) {
+		callback = JSON.parse(callback);
+		linn = callback.city;
+		_('city').innerHTML = linn;
+	});
 
 	
 };

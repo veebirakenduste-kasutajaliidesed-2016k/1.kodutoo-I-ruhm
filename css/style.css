@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: 'SFDRegular';
-  src: url('../fonts/SFDRegular.eot') format('truetype');
+  src: url('../fonts/SFDRegular.ttf') format('truetype');
 }
 
 .f1{
@@ -43,7 +43,7 @@ body{
 #time{
 	font-size: 128px;
 }
-#date{
+#date, #city{
 	font-size: 32px;
 }
 .buttons span{
@@ -53,7 +53,7 @@ body{
 	#time{
 	font-size: 98px;
 	}
-	#date{
+	#date, #city{
 		font-size: 24px;
 	}
 }
