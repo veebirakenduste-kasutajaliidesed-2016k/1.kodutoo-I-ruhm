@@ -47,7 +47,13 @@ function writeDate(){
  var minutes = today.getMinutes();
  var seconds = today.getSeconds();
 
+ var day =today.getDate();
+ var month = today.getMonth()+1;
+ var year = today.getFullYear();
+
  seconds = setZeroBefore(seconds);
+
+ date.innerHTML = setZeroBefore(day) + "." + setZeroBefore(month) + "." + (year);
 
  clock.innerHTML = setZeroBefore(hours) + ":" + minutes + ":" +seconds;
 }

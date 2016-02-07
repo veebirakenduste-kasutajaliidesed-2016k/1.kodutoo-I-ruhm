@@ -7,6 +7,8 @@ div {
     margin-top:- X/2 px;
     margin-left:- Y/2 px;
 	font-size: 100px;
+	font-weight: bold;
+	font-family: Comic Sans MS;
 }
 
 p{
@@ -25,4 +27,6 @@ h1 {
     margin-top:- X/2 px;
     margin-left:- Y/2 px;
 	font-size: 50px;
+	font-weight: bold;
+	font-family: Comic Sans MS;
 }
