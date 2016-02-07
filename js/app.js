@@ -67,7 +67,7 @@ function setTime(){
 
 window.onload = function(){
 	setTime();
-	setInterval(setTime(), 1000);
+	var x = setInterval(setTime, 1000);
 	_('sub').addEventListener('click', function(event){
 		event.preventDefault();
 		sub();
