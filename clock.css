@@ -2,9 +2,27 @@ div {
 	position:absolute;
     height: X px;
     width: Y px;
-    left:50%;
-    top:50%;
+    left:35%;
+    top:35%;
     margin-top:- X/2 px;
     margin-left:- Y/2 px;
+	font-size: 100px;
 }
 
+p{
+	font-size: 20px;
+	position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+h1 {
+	position:absolute;
+    height: X px;
+    width: Y px;
+    left:45%;
+    top:45%;
+    margin-top:- X/2 px;
+    margin-left:- Y/2 px;
+	font-size: 50px;
+}
