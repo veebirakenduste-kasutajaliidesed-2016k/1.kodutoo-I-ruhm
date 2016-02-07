@@ -8,7 +8,7 @@ window.onload = function clockTime(){
   M = checkTime(M);
   S = checkTime(S);
 
-  document.getElementById('kell').innerHTML = H + ' : ' + M + ' : ' + S;
+  document.getElementById('clock').innerHTML = H + ' : ' + M + ' : ' + S;
 
   t = setTimeout(clockTime, 1000);
 
@@ -20,14 +20,14 @@ function checkTime(i) {
 }
 
 function randcolor(){
-  document.getElementById('kell').style.color = "#"+((1<<12)*Math.random()|0).toString(16);
+  document.getElementById('clock').style.color = "#"+((1<<12)*Math.random()|0).toString(16);
 }
 
 function textSize(){
 
-  tekstiSuurus = document.getElementById('kell').offsetWidth/8;
+  textSizee = document.getElementById('clock').offsetWidth/8;
 
-  document.getElementById("kell").style.fontSize = tekstiSuurus + "pt";
+  document.getElementById("clock").style.fontSize = textSizee + "pt";
 
 }
 

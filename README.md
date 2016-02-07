@@ -1,3 +1,4 @@
+@@ -1,29 +0,0 @@
 # 1. kodutöö (I rühm) – Lauakell
 
 Kujunda tunnis alustatud kellanäide vastavalt maitsele või kindlale teemale, mahutades kella täisekraanile, et saaks kasutada lauakella või ekraanisäästja asemel. Selleks, et see sobiks paljudele ekraanidele, kasuta kujunduse loomisel protsendilisi väärtusi (nt width: 100%; ) või võimalda kella suurust kasutajal muuta.

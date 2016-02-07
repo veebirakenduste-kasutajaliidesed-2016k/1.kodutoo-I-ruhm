@@ -1,4 +1,4 @@
-#nimi{
+#name{
 	position: fixed;
   top: 1%;
   left: 25%;
@@ -7,42 +7,13 @@
 	text-align:center;
 
 }
-#varv{
+#color{
 	position: fixed;
   bottom: 0;
   margin-bottom: 5%;
   left: 25%;
 	width:50%;
 	text-align:center;
-
-
-}
-
-html{
-  min-height:100%;
-  position:relative;
-}
-body{
-  height:100%;
-  margin:0px;
-  background: linear-gradient(-45deg, rgb(0, 0, 0), rgb(99, 245, 216));
-
-}
-
-#kell{
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  position:absolute;
-  top:40%;
-  bottom:10%;
-  left:0;
-  right:0;
-  overflow:hidden;
-
-}
-
-#varv {
 	-moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
 	-webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
 	box-shadow: 0px 1px 0px 0px #f0f7fa;
@@ -77,4 +48,28 @@ body{
 	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
 	background-color:#019ad2;
+}
+
+html{
+  min-height:100%;
+  position:relative;
+}
+body{
+  height:100%;
+  margin:0px;
+  background: linear-gradient(-45deg, rgb(0, 0, 0), rgb(99, 245, 216));
+
+}
+
+#clock{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  position:absolute;
+  top:40%;
+  bottom:10%;
+  left:0;
+  right:0;
+  overflow:hidden;
+
 }
