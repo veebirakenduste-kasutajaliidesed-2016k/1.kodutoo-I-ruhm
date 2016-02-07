@@ -22,7 +22,7 @@ function writeDate(){
   var minutes = today.getMinutes();
   var seconds = today.getSeconds();
  // var year = today.getFullYear();
-  var day = today.getDay();
+  var day = today.getDate();
  // var month = today.getMonth();
   var month = new Array();
   month[0] = "Jan";
@@ -39,7 +39,7 @@ function writeDate(){
   month[11] = "Dec";
   var kuu = month[today.getMonth()]; 
 
-  clock.innerHTML = hours + ':'+ minutes + ':' + seconds + '<br/>' + day + ' ' + kuu;
+  clock.innerHTML = hours + ':'+ minutes +  '<br/>' + day + ' ' + kuu;
 
 }
 
