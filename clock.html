@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kell</title>
+  <script src="clock.js"></script>
+  <style>  
+  @font-face { font-family: Digital; src: url('digital-7.ttf'); } 
+  .style {    
+	font-family: Digital;
+	font-size:50pt;
+	text-align:center;
+	padding-top:100px;
+   }
+   .styleFooter {
+	position: fixed;
+    bottom: 0px;
+	left: -1px;
+    width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70777c+0,3d3d3d+100 */
+	background: rgb(112,119,124); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(112,119,124,1) 0%, rgba(61,61,61,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(112,119,124,1) 0%,rgba(61,61,61,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(112,119,124,1) 0%,rgba(61,61,61,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70777c', endColorstr='#3d3d3d',GradientType=0 ); /* IE6-9 */
+    border-top: solid 1px #333333;
+	color: #000000;
+	font-family: Arial;
+	font-size: 10pt;
+   }
+   .style3 {
+   text-align:center;
+   padding-top:10%;
+   }
+   .button {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232 */
+	background: rgb(242,246,248); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
+    border: none;
+    color: #000000;
+    padding: 5px 20px;
+	margin-bottom:5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+   .reset {
+    border: none;
+    color: #000000;
+	background: transparent;
+    text-decoration: none;
+	font-family: Arial;
+	font-size: 10pt;
+}
+	.alignleft {
+		float: left;
+		padding-left:5%;
+}
+	.alignright {
+		float: right;
+		padding-right:3%;
+}
+  </style>
+</head>
+<body>
+  <div id="clock" class="style">0:0:0</div>
+  <div id="buttons" class="style3">
+	<button onclick="smaller()" class="button">-</button> 
+	<button onclick="bigger()" class="button">+</button>
+	<br/>
+	<button onclick="moveUp()" class="button">&#8593;</button> 
+	<button onclick="moveDown()" class="button">&#8595;</button>
+  </div>
+  
+  <div class="styleFooter">
+	<p class="alignleft">Ester Pukk</p>
+	<p class="alignright"><button onclick="reset()" class="reset">Reset</button></p>  
+  </div>
+
+</body>
+<script type="text/javascript">
+var currentTime = new Date().getHours();
+
+if (7 <= currentTime && currentTime < 20) {
+    if (document.body) {
+	
+        document.body.style.backgroundColor = "#D8D8D8"; 
+		document.getElementById("clock").style.color = "#000000";
+    }
+}
+else {
+    if (document.body) {
+       document.body.style.backgroundColor = "#3D3D3D"; 
+	   document.getElementById("clock").style.color = "#CCCCCC";
+    }
+}
+</script>
+</html>
