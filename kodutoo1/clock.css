@@ -1,0 +1,38 @@
+.container{
+	background-image:url("img/cube2.png");
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	height:25%;
+	left:50%;
+	position:absolute;
+	top:50%;
+	width:20%;
+}
+
+#clock{
+	font-family:monospace;
+	font-size:145%;
+	font-weight:bold;
+	height:25%;
+	left: 47%;
+    position: relative;
+    transform: rotate(-25deg) skewX(-27deg);
+    top: 76%;
+	width:20%;
+}
+
+.bat{
+	position: absolute;
+    left: 20%;
+    top: 30%;
+	width:50%;
+}
+
+#hit{
+	height:20px;
+	position:absolute;
+	width:20px;
+	top:16%;
+	left:45%;
+}
