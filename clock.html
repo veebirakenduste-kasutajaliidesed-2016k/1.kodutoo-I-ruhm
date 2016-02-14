@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,16 +16,16 @@
 <body>
   <p id="clock">0:0:0</p>
 
-  <button id="button" href="#" class="btn btn-kp" type="button" onclick="PeidaKell()">Peida kell</button>
+  <button id="button" href="#" class="btn btn-kp" type="button" onclick="HideTime()">Peida kell</button>
   <script>
-  function PeidaKell() {
+  function HideTime() {
       document.getElementById("clock").style.visibility = "hidden";
   }
   </script>
 
-  <button id="button" href="#" class="btn btn-kp" type="button" onclick="NäitaKell()">Näita kella</button>
+  <button id="button" href="#" class="btn btn-kp" type="button" onclick="ShowTime()">Näita kella</button>
   <script>
-  function NäitaKell() {
+  function ShowTime() {
       alert(document.getElementById("clock").style.visibility = "visible");
   }
   </script>
