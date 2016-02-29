@@ -1,5 +1,7 @@
-window .onload = function(){
+﻿window .onload = function(){
  var theme = "white";
+ var size = "1";
+
 
  //tänane kp: Mon Feb 01 2016 12:43:50 GMT+0200 (FLE Standard Time)
 
@@ -37,6 +39,22 @@ window .onload = function(){
        theme = "white";
      }
    })
+   date.addEventListener("dblclick", function(){
+         if(size === "1"){
+           document.getElementById("date").style.fontSize="50px";
+           document.getElementById("clock").style.fontSize="100px";
+           size = "2";
+         } else if (size === "2"){
+            document.getElementById("date").style.fontSize="70px";
+            document.getElementById("clock").style.fontSize="130px";
+               size = "3";
+
+         } else {
+           document.getElementById("date").style.fontSize="110px";
+           document.getElementById("clock").style.fontSize="180px";
+           size = "1";
+         }
+     })
 };
 
 
@@ -55,7 +73,7 @@ function writeDate(){
 
  date.innerHTML = setZeroBefore(day) + "." + setZeroBefore(month) + "." + (year);
 
- clock.innerHTML = setZeroBefore(hours) + ":" + minutes + ":" +seconds;
+ clock.innerHTML = setZeroBefore(hours) + ":" + setZeroBefore(minutes) + ":" +seconds;
 }
 
 //lisab nulli kui arv on 10st väiksem
